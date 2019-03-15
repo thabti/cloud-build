@@ -1,8 +1,7 @@
 steps:
   - name: "gcr.io/cloud-builders/docker"
-    args: ["build", "-t", "gcr.io/$PROJECT_ID/server:v4", "."]
-    env:
-      - "CLOUDSDK_COMPUTE_ZONE=us-east4-b"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/server:v9", "."]
+    env: o- "CLOUDSDK_COMPUTE_ZONE=us-east4-b"
       - "CLOUDSDK_CONTAINER_CLUSTER=my-cluster"
 images:
   - "gcr.io/$PROJECT_ID/server"
